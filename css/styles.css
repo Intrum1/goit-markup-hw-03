@@ -12,7 +12,17 @@ body {
         color: #434455;
         background: #FFFFFF;
 }
+
+
 /**-------------------------------- HEADER--------------------- */
+
+.header {
+
+}
+
+.header-container {
+display: flex;
+}
 
 .header-logo {
         font-family: 'Raleway', sans-serif;
@@ -22,21 +32,74 @@ body {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--logo-color);
-        
+        margin-right: 76px;
+        margin-left: 156px;
+        display: flex;
+        align-items: center;
 }
 .header-logo span {
         color: var(--title-color);
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+ul {
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;       
+}
+
+.container {
+        width: 100%;
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        outline: 2px solid red;
+}
+
 .link {
         text-decoration: none;
 }
+
 .list {
         list-style-type: none;
 }
-.header-address {
-        font-style: normal
+
+.header-nav {
+display: flex;
+align-items: center;
 }
+
+
+.header-menu {
+display: flex;
+align-items: center;
+gap: 40px;
+padding-top: 24px;
+padding-bottom: 24px;
+flex-grow: 1;
+justify-content: space-between;
+}
+
+.header-address {
+font-style: normal;
+display: flex;
+align-items: center;
+padding-top: 24px;
+padding-bottom: 24px;
+}
+
+.header-contact {
+display: flex;
+align-items: center;
+gap: 40px;
+margin-left: 332px;
+}
+
 
 .header-menu-link {
         font-weight: 500;
@@ -67,7 +130,13 @@ body {
 
 /** ----------------------------HERO-------------------- */
 
-.hero-home {background: #2E2F42;}
+
+
+.hero-container {
+        padding: 188px 472px 292px 472px;
+        background-color: var(--title-color);
+        
+}
 
 .hero-solutions {
         font-weight: 700;
@@ -76,7 +145,8 @@ body {
         letter-spacing: 0.02em;
         text-align: center;
         color: var(--white-title-color);
-}
+        max-width: 496px;
+        }
 
 .hero-solutions-btn {
         font-family: inherit;

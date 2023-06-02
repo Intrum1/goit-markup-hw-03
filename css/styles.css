@@ -235,7 +235,9 @@ padding: 188px 472px 188px 472px;
 
 /** ------------------------------DOING------------------- */
 
-.section-doing {}
+.section-doing {
+        padding-bottom: 120px;
+}
 
 .title-doing {
         font-weight: 700;
@@ -245,9 +247,14 @@ padding: 188px 472px 188px 472px;
         text-transform: capitalize;
         text-align: center;
         color: var(--title-color);
+        margin-bottom: 72px;
 }
 
-.list-doing {}
+.list-doing {
+        display: flex;
+        gap: 24px;
+        width: calc((100% - 48px) / 3);
+}
 
 .image-doing {}
 

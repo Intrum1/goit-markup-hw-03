@@ -367,6 +367,7 @@ padding: 188px 472px 188px 472px;
 
 .footer {
         background: var(--title-color);
+        padding: 100px 0;
 }
 
 .footer-logo {
@@ -377,7 +378,8 @@ padding: 188px 472px 188px 472px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--logo-color);
-        
+        display: inline-block;
+        margin-bottom: 16px;
 }
 .footer-logo span {
         color: var(--background-team-color);
@@ -391,4 +393,5 @@ padding: 188px 472px 188px 472px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--background-team-color);
+        max-width: 264px;
 }

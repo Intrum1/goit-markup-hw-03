@@ -5,6 +5,7 @@
         --hover-color:#434455;
         --background-color:#404BBF;
         --background-team-color: #F4F4FD;
+        --btn-color: #e7e9fc;
 }
 body {
         font-family: 'Raleway', sans-serif;
@@ -17,7 +18,7 @@ body {
 /**-------------------------------- HEADER--------------------- */
 
 .header {
-        border-bottom: 1px solid #e7e9fc;
+        border-bottom: 1px solid var(--btn-color);
 
 }
 
@@ -316,9 +317,17 @@ padding: 188px 472px 188px 472px;
 
 /**------------------- SECOND PAGE-------------- */
 
-.hero-portfolio {}
+.hero-portfolio {
+        padding-top: 96px; 
+        padding-bottom: 120px;
+}
 
-.hero-btn {}
+.hero-btn {
+        display: flex;
+        justify-content: center;
+        gap:24px;
+        margin-bottom: 72px;
+}
 
 .button-list {}
 
@@ -331,21 +340,38 @@ padding: 188px 472px 188px 472px;
         color: var(--logo-color);
         background-color:var(--background-team-color);
         cursor: pointer;
+        padding: 12px 24px;
+        border: 1px solid var(--btn-color);
+        border-radius: 4px;
         }
 
 .hero-button-portfolio:hover {
         color: var(--white-title-color);
         background-color: var(--background-color);
+        border: 1px solid transparent;
 }
 .hero-button-portfolio:focus {
         color: var(--white-title-color);
         background-color: var(--background-color);
+        border: 1px solid transparent;
 }
 
-.hero-projects {}
+.hero-projects {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px; 
+}
+
+.project-div {
+        padding: 32px 16px;
+        border: 1px solid #e7e9fc;
+        border-top: none;
+}
 
 .section-item {
         background: var(--white-title-color);
+        width: calc((100% - 48px) / 3);
 }
 
 .hero-abilitys {
@@ -354,6 +380,7 @@ padding: 188px 472px 188px 472px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--title-color);
+        margin-bottom: 8px;
 }
 
 .hero-text {

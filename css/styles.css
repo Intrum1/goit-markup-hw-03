@@ -216,9 +216,8 @@ background-color: var(--title-color);
 .hero-oport {
         display: flex;
         gap: 24px;
-        padding-left: 156px;
-        padding-right: 156px;
         align-items: center;
+        padding-left: 0;
 }
 
 .hero-oport-item {
